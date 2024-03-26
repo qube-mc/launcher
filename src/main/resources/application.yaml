@@ -1,3 +1,12 @@
 spring:
   application:
     name: qube-launcher
+qubemc:
+  repos:
+    launcher-meta:
+      url: launchermeta.mojang.com
+      version-manifest:
+        version: v2
+    piston-meta:
+      url: piston-meta.mojang.com
+      version: v1
