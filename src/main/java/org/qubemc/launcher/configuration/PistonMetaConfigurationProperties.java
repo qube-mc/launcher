@@ -5,10 +5,10 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @Data
 @ConfigurationProperties(prefix = "qubemc.repos.piston-meta")
-public class PistonMetaRepository {
+public class PistonMetaConfigurationProperties {
 
     private String url;
 
-    private Version version;
+    private ApiVersions version;
 
 }

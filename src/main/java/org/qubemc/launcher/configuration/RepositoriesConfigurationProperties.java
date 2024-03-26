@@ -5,10 +5,10 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @Data
 @ConfigurationProperties(prefix = "qubemc.repos")
-public class Repositories {
+public class RepositoriesConfigurationProperties {
 
-    private LauncherMetaRepository launcherMeta;
+    private LauncherMetaConfigurationProperties launcherMeta;
 
-    private PistonMetaRepository pistonMeta;
+    private PistonMetaConfigurationProperties pistonMeta;
 
 }

@@ -5,10 +5,10 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @Data
 @ConfigurationProperties(prefix = "qubemc.repos.launcher-meta")
-public class LauncherMetaRepository {
+public class LauncherMetaConfigurationProperties {
 
     private String url;
 
-    private VersionManifest versionManifest;
+    private VersionManifestConfigurationProperties versionManifest;
 
 }

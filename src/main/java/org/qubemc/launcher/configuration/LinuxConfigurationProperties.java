@@ -4,9 +4,9 @@ import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @Data
-@ConfigurationProperties(prefix = "qubemc.repos.launcher-meta.version-manifest")
-public class VersionManifest {
+@ConfigurationProperties(prefix = "qubemc.installer.linux")
+public class LinuxConfigurationProperties {
 
-    private Version version;
+    private String baseDir;
 
 }

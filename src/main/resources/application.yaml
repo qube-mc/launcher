@@ -2,11 +2,18 @@ spring:
   application:
     name: qube-launcher
 qubemc:
+  installer:
+    windows:
+      base-dir: C:/Users/%s/AppData/Roaming/qubemc/
+    osx:
+      base-dir: null
+    linux:
+      base-dir: null
   repos:
     launcher-meta:
-      url: launchermeta.mojang.com
+      url: https://launchermeta.mojang.com/
       version-manifest:
         version: V2
     piston-meta:
-      url: piston-meta.mojang.com
+      url: https://piston-meta.mojang.com/
       version: V1

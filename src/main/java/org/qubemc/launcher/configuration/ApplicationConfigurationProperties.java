@@ -7,6 +7,8 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties(prefix = "qubemc")
 public class ApplicationConfigurationProperties {
 
-    private Repositories repos;
+    private InstallerConfigurationProperties installer;
+
+    private RepositoriesConfigurationProperties repos;
 
 }
