@@ -1,5 +1,6 @@
 package org.qubemc.launcher.controller;
 
+import org.qubemc.launcher.common.UnknownVersionException;
 import org.qubemc.launcher.service.InstallerService;
 import org.springframework.shell.command.annotation.Command;
 import org.springframework.shell.command.annotation.Option;
@@ -15,8 +16,8 @@ public class InstallerCommandController {
 
     @Command(command = "install")
     public String install(
-            @Option(defaultValue = "1.20.4") String versionValue
-    ) {
+            @Option String versionValue
+    ) throws UnknownVersionException {
         return installerService.install(versionValue);
     }
 

@@ -1,12 +1,18 @@
 package org.qubemc.launcher.api.manifest.arguments;
 
+import com.fasterxml.jackson.annotation.JsonAlias;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import lombok.Data;
 
 @Data
 public class Arguments {
 
-    private GameArgument game;
+    @JsonAlias("game")
+    @JsonDeserialize(using = ArgumentDeserializer.class)
+    private Argument game;
 
-    private JvmArgument jvm;
+    @JsonAlias("jvm")
+    @JsonDeserialize(using = ArgumentDeserializer.class)
+    private Argument jvm;
 
 }

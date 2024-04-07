@@ -9,4 +9,8 @@ public class WindowsConfigurationProperties {
 
     private String baseDir;
 
+    private String librariesDirName = "libraries";
+
+    private String userVariableName = "user.name";
+
 }

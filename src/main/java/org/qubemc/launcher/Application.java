@@ -12,7 +12,7 @@ import org.springframework.shell.command.annotation.EnableCommand;
 		InstallerCommandController.class
 })
 @EnableConfigurationProperties({
-		ApplicationConfigurationProperties.class,
+        ConfigurationProperties.class,
 		InstallerConfigurationProperties.class,
 		WindowsConfigurationProperties.class,
 		OsxConfigurationProperties.class,
